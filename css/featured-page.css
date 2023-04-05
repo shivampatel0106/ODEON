@@ -1,0 +1,228 @@
+* {
+    margin: 1px;
+    padding: 0px;
+}
+
+/* global styles */
+body {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    background-color: black;
+    color: whitesmoke;
+    /* background-image: url(""); */
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+/* header styles */
+header {
+    /* position: fixed; */
+    top: -1;
+    width: 100%;
+    background-color: transparent;
+    z-index: 999;
+    margin-top: 25px;
+}
+
+header.scrolled {
+    background-color: black;
+    margin-top: 0;
+}
+
+header>nav {
+    margin: 0 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header>nav>ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    text-align: center;
+    white-space: nowrap;
+    padding: 0 100px;
+}
+
+header>nav>ul>li {
+    padding: 30px 0 30px 45px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+header a:hover,
+header a:active {
+    color: #4E7DC1;
+}
+
+
+/* main style */
+main{
+    position: relative;
+    display: flex;
+    gap: 30px;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 40px;
+    align-items: center;
+}
+main img{
+    width:300px;
+    height: 10%;
+}
+
+.movie-title{
+    font-size: 50px;
+    font-weight: bold;
+}
+.movie-details div{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    text-align:left;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top:5px;
+    margin-bottom: 10px;
+}
+
+.movie-details span.rating,
+span.hd {
+    border: 0.7px solid white;
+    padding: 1px;
+    color: #041A46;
+    font-weight: bold;
+    border-radius: 2px;
+    background-color: white;
+}
+
+.movie-details a#get-tickets {
+    padding: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 3px solid white;
+    background-color: white;
+    color: #041A46;
+    border-radius: 3px;
+}
+
+.movie-details a#get-tickets:hover {
+    background-color: #041A46;
+    color: white;
+    cursor: pointer;
+}
+
+.rating-star::before {
+    content: "\f005";
+    padding-right: 2px;
+    font-family: 'FontAwesome';
+    color: #4E7DC1;
+}
+
+.release::before {
+    content: "\f073";
+    padding-right: 2px;
+    font-family: 'FontAwesome';
+    color: #4E7DC1;
+}
+.duration::before {
+    content: "\f017";
+    padding-right: 2px;
+    font-family: 'FontAwesome';
+    color: #4E7DC1;
+}
+button{
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 3px solid white;
+    background-color: white;
+    color: #041A46;
+    border-radius: 3px;
+}
+button:hover{
+    background-color: #041A46;
+    color: white;
+    cursor: pointer;
+}
+/* divider style  */
+.divider {
+    height: 4px;
+    margin-block: 30px;
+    border-top: 1px solid var(--rich-black-fogra-29);
+    border-bottom: 1px solid hsla(0, 0%, 100%, 0.1);
+}
+/* footer style  */
+footer {
+    min-height: 50px;
+    display: flex;
+    flex-direction: row;
+    margin: 0 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright {
+    font-size: small;
+    text-align: center;
+}
+strong{
+    color: #4E7DC1;
+}
+.socialmedia-links ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+    white-space: nowrap;
+    gap: 10px;
+}
+
+/* miscellaneous styles  */
+
+.featured-page .movie-desc {
+    max-width: 75%;
+    line-height: 24px;
+    margin-bottom: 24px;
+}
+
+/* showtime styles */
+
+#shows div {
+    max-width: 50%;
+    margin: 0 auto;
+    display: flex;
+}
+
+#shows div span {
+    width: 100%;
+    text-align: center;
+    margin: 24px;
+}
+
+#shows div span a {
+    width: 100%;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 3px solid white;
+    background-color: white;
+    color: #041A46;
+    border-radius: 3px;
+}
+
+#shows div span a[disabled="true"] {
+    opacity: 0.5;
+    cursor: not-allowed;
+}

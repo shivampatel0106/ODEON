@@ -1,0 +1,185 @@
+/* global styles */
+* {
+    margin: 1px;
+    padding: 0px;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    background-color: black;
+    color: whitesmoke;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+/* header styles */
+header {
+    position: static;
+    top: -1;
+    width: 100%;
+    background-color: transparent;
+    z-index: 999;
+    margin-top: 25px;
+}
+
+header.scrolled {
+    background-color: black;
+    margin-top: 0;
+}
+
+header>nav {
+    margin: 0 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header>nav>ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    text-align: center;
+    white-space: nowrap;
+    padding: 0 100px;
+}
+
+header>nav>ul>li {
+    padding: 30px 0 30px 45px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+header a:hover,
+header a:active {
+    color: #4E7DC1;
+}
+
+
+/* main style */
+main {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: black;
+    background-color: white;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.details {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    text-align: center;
+    color: black;
+    padding: 20px;
+}
+
+/* footer style */
+footer {
+    min-height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    background-color: black;
+    color: whitesmoke;
+}
+
+.socialmedia-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.socialmedia-links ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.socialmedia-links li {
+    padding: 0 15px;
+}
+
+.socialmedia-links a {
+    color: whitesmoke;
+    font-size: 1.5rem;
+}
+
+.socialmedia-links a:hover,
+.socialmedia-links a:active {
+    color: #4E7DC1;
+}
+
+.location-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #f44336;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.location-icon svg {
+    fill: #ffffff;
+    width: 20px;
+    height: 20px;
+}
+
+.email-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #2196f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.email-icon svg {
+    fill: #ffffff;
+    width: 20px;
+    height: 20px;
+}
+
+.telephone-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #4caf50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.telephone-icon svg {
+    fill: #ffffff;
+    width: 20px;
+    height: 20px;
+}
+
+.contact-us-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #F44336;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-us-icon svg {
+    fill: #FFFFFF;
+    width: 20px;
+    height: 20px;
+}

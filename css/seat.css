@@ -1,0 +1,210 @@
+header {
+	position: fixed;
+	top: -1;
+	width: 100%;
+	background-color: transparent;
+	z-index: 999;
+	margin-top: 25px;
+}
+
+header.scrolled {
+	background-color: black;
+	margin-top: 0;
+}
+
+header>nav {
+	margin: 0 30px;
+	display: flex;
+	justify-content: space-between;
+}
+
+header>nav>ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	list-style-type: none;
+	text-align: center;
+	white-space: nowrap;
+	padding: 0 100px;
+}
+
+header>nav>ul>li {
+	padding: 30px 0 30px 45px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+header a:hover,
+header a:active {
+	color: #4E7DC1;
+}
+
+body {
+	font-size: 16px;
+	font-family: 'Poppins', sans-serif;
+	text-transform: capitalize;
+	background-color: black;
+	color: whitesmoke;
+}
+
+a {
+	text-decoration: none;
+	color: whitesmoke;
+}
+
+.cinema {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.screen {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 70px;
+	width: 80%;
+	background-color: #333;
+	color: #fff;
+	font-size: 24px;
+	margin-top: 20px;
+	border-radius: 50%;
+	position: relative;
+	margin-bottom: 100px;
+	margin-top: 150px;
+}
+
+.exit {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 40px;
+	width: max-content;
+	position: absolute;
+
+	background-color: #ddd;
+	border-radius: 10px;
+	z-index: 1;
+}
+
+.left-exit {
+	left: -60px;
+	color: red;
+	text-shadow: 0 0 5px red,
+		0 0 25px red,
+		0 0 50px red,
+		0 0 75px red,
+		0 0 100px red;
+}
+
+.right-exit {
+	right: -60px;
+	color: red;
+	text-shadow: 0 0 5px red,
+		0 0 25px red,
+		0 0 50px red,
+		0 0 75px red,
+		0 0 100px red;
+}
+
+.seat-preview {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 20px;
+}
+
+.seat {
+	width: 40px;
+	height: 40px;
+	padding: 10px;
+	background-color: #f2f2f2;
+	border: 1px solid #ccc;
+	border-radius: 5px 5px 0 0;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	position: relative;
+	box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4), inset 0 -10px 10px -10px rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+}
+
+.standard {
+	background-color: #EFEFEF;
+	color: #3B3B3B;
+	text-align: center;
+}
+
+.premium {
+	background-color: #FFC107;
+	color: #3B3B3B;
+	text-align: center;
+}
+
+.VIP {
+	background-color: #555;
+	color: #fff;
+	text-align: center;
+}
+
+.selected {
+	background-color: #1abc9c;
+	border-color: #16a085;
+	color: #fff;
+	cursor: not-allowed;
+}
+
+.disabled {
+	background-color: #ccc;
+	cursor: not-allowed;
+}
+
+.seat-demo {
+	font-size: 16px;
+	font-family: 'Poppins', sans-serif;
+	text-transform: capitalize;
+}
+
+.std {
+	font-size: 16px;
+	font-family: 'Poppins', sans-serif;
+	text-transform: capitalize;
+}
+
+.total-amount {
+	display: inline;
+	margin-top: 20px;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+#pay-button {
+	background-color: #27ae60;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	font-size: 18px;
+	cursor: pointer;
+	margin-left: 10px;
+}
+
+#pay-button:hover {
+	background-color: #2ecc71;
+}
+
+#selected-seats {
+	display: inline;
+	margin-top: 20px;
+	font-size: 24px;
+	font-weight: bold;
+	color: whitesmoke;
+}
+
+.seat.selected {
+	background-color: #275ed4; /* change to the color of your choice */
+	transform: scale(1.2); /* increase the size of the selected seat */
+  }
+
+  .seat:not(.disabled):hover {
+	cursor: pointer;
+  }
+  

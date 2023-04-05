@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/seat.css">
+  <title>Seat Selection</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="#"><img id="logo" src="assets\Logo.png" alt="site logo here" width="90" height="90"></a>
+      <ul>
+        <li><a href="index.html"> home</a></li>
+        <li><a href="#movies"> now playing</a></li>
+        <li><a href="#location"> location</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="cinema">
+    <div class="screen">
+      <div class="left-exit exit">EXIT</div>
+      <div class="right-exit exit">EXIT</div>
+      <span>SCREEN</span>
+    </div>
+
+    <div class="seat-preview">
+      <!-- seats are added here by JavaScript -->
+    </div>
+
+    <div class="seat-demo">
+      <div class="std">STANDARD - </div>
+      <div class="pre">PREMIUM - </div>
+      <div class="vp">VIP - </div>
+    </div>
+
+    <div class="total-amount">Total Amount: $0</div>
+    <div id="selected-seats"> Selected Seats : </div>
+    <button id="pay-button">PAY HERE</button>
+  </div>
+
+  <script src="js/seat.js"></script>
+  <script>
+    const movieData = JSON.parse(localStorage.getItem('movieData'));
+    const movieDetails = document.querySelector('.movie-details');
+
+    movieDetails.innerHTML = `
+  <img src="${movieData.image}" alt="">
+  <div>
+      <h1 class="movie-title">${movieData.movieTitle}</h1>
+      <div>
+          <span class="rating">${movieData.rating}</span>
+          <span class="hd">${movieData.hd}</span>
+          <span class="genre">${movieData.genre}</span>
+      </div>
+      <div>
+          <span class="rating-star">${movieData.starRating}</span>
+          <span class="release">${movieData.release}</span>
+          <span class="duration">${movieData.duration}</span>
+      </div>
+      <p class="movie-desc">${movieData.movieDesc}</p>
+  </div>
+  `;
+  </script>
+
+</body>
+
+</html>

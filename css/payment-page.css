@@ -1,0 +1,234 @@
+* {
+    margin: 1px;
+    padding: 0px;
+}
+
+/* global styles */
+body {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    background-color: black;
+    color: whitesmoke;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+/*header styles */
+header {
+    /* position: fixed; */
+    /* top: -1; */
+    width: 100%;
+    z-index: 999;
+    margin-top: 15px;
+}
+
+/* header.scrolled {
+    background-color: black;
+    margin-top: 0;
+} */
+
+header>nav {
+    margin: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+header>nav>ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    text-align: center;
+    white-space: nowrap;
+    padding: 0 100px;
+}
+
+header>nav>ul>li {
+    padding: 30px 0 30px 45px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+header a:hover,
+header a:active {
+    color: #4E7DC1;
+}
+
+/* section style  */
+section{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.right-section{
+    margin: 5px;
+}
+/* rigth section image */
+.right-section img{
+    width: 500px;
+    height: auto;
+}
+/* movie summary  */
+.movie-summary{
+    text-align: center;
+}
+.movie-summary h4{
+    font-weight: bold;
+}
+.movie-summary p{
+    font-weight: normal;
+    font-size: 15px;
+}
+/* order-sumarry  */
+.order-sumarry {
+    padding: 0 16px;
+    width: min-content;
+}
+
+.container {
+    background-color: #f2f2f2;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    color: black;
+    height: auto;
+}
+
+a {
+    color: #2196F3;
+}
+
+span.price {
+    text-align: right;
+    color: grey;
+}
+
+.left-section{
+    width: max-content;
+}
+/* payment-info style  */
+/* tickets section style  */
+.payment-info{
+    margin: 1px;
+}
+.payment-info h1, .forms h1{
+    font-size: 28px;
+    font-weight: bold;
+    margin: 5px 0px;
+    border: 2px solid white;
+    padding: 5px;
+    width: 500px;
+    text-align: center;
+}
+.payment-opt, .tickets{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.payment-opt .card_details input, .payment-opt .paypal_details input {
+  width: 100%;
+  padding: 12px;
+}
+
+.tickets input {
+    color: white;
+}
+.payment-opt div, .tickets div{
+    display: flex;
+    justify-content:space-between;
+    border: 1px dotted white;
+    padding: 10px;
+    /* width:50%; */
+    margin: 10px 0px;
+    flex-wrap: wrap;
+}
+
+#ga-ticket, #sp-ticket{
+    width: 60px;
+    height: fit-content;
+    background-color: transparent;
+    border: 1px dotted white;
+}
+.payment-info a{
+    padding: 10px;
+    font-size: 20px;
+    background-color: #2196F3;
+    color: white;
+    border: 2px solid #2196F3;
+    border-radius: 4px;
+}
+.payment-info a:hover{
+    color: #2196F3;
+    background-color: white;
+}
+
+.placeholder input{
+    background-color: black;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+    width: fit-content;
+    height: fit-content;
+    color: white;
+    text-transform: capitalize;
+}
+/* divider stlye  */
+.divider {
+    height: 4px;
+    margin-block: 30px;
+    border-top: 1px solid var(--rich-black-fogra-29);
+    border-bottom: 1px solid hsla(0, 0%, 100%, 0.1);
+}
+
+/* footer style  */
+footer {
+    min-height: 50px;
+    display: flex;
+    flex-direction: row;
+    margin: 0 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright {
+    font-size: small;
+    text-align: center;
+}
+
+strong {
+    color: #4E7DC1;
+}
+
+.socialmedia-links ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+    white-space: nowrap;
+    gap: 10px;
+}
+
+.socialmedia-links li {
+    border-radius: 50%;
+    border: 1px solid #4E7DC1;
+    height: 100%;
+    width: 100%;
+    padding: 6px;
+}
+
+.fa:hover {
+    color: #4E7DC1;
+}
+
+.paypal_details.d-none, .card_details.d-none {
+    display: none;
+}

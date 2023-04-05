@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ODEON</title>
+    <link rel="stylesheet" href="css\payment-page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#"><img id="logo" src="assets\Logo.png" alt="site logo here" width="80" height="80"></a>
+            <ul>
+                <li><a href="index.html"> home</a></li>
+                <li><a href="#movies"> now playing</a></li>
+                <li><a href="#location"> location</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div class="left-section">
+            <div class="forms">
+                <h1>tickets</h1>
+                <form action="" class="tickets">
+                    <div>
+                        <label for="ga-ticket">general admission - $69.99</label>
+                        <input min="0" max="5" type="number" name="" id="ga-ticket">
+                    </div>
+                    <div>
+                        <label for="sp-ticket">Student and seniors - <del>$69.99</del> $59.99</label>
+                        <input min="0" max="5" type="number" name="" id="sp-ticket">
+                    </div>
+                </form>
+            </div>
+            <div class="payment-info">
+                <h1>payment information</h1>
+                <form name="paymentsForm" class="payments">
+                    <div class="payment-opt">
+                        <div>
+                            <span>
+                                <input type="radio" name="payment_method" id="paypal" value="paypal">
+                                <label for="paypal">paypal</label>
+                            </span>
+                            <i class="fa-brands fa-paypal"></i>
+                        </div>
+                        <div class="paypal_details d-none">
+                            <input type="email" name="" id="paypal_email" placeholder="paypal email address">
+                            <input type="password" name="" id="paypal_pass" placeholder="paypal password">
+                        </div>
+                        <div>
+                            <span>
+                                <input type="radio" name="payment_method" id="card" value="cardCD">
+                                <label for="card">credit or debit</label>
+                            </span>
+                            <i class="fa-solid fa-credit-card"></i>
+                        </div>
+                        <div class="card_details d-none">
+                            <input type="number" name="" placeholder=" enter card number " id="card_number">
+                            <input type="number" name="" placeholder=" enter cvv code " id="card_cvv">
+                        </div>
+                    </div>
+                </form>
+                <a href="thank-you.html">Pay now</a>
+            </div>
+        </div>
+        <div class="right-section">
+            <div>
+                <img src="assets\hero-banner.jpg" alt="">
+            </div>
+            <div class="movie-summary">
+                <h4>movie showtime summary</h4>
+                <p>Wall E</p>
+                <p>27th Jan 2023</p>
+                <p>11:00 am</p>
+            </div>
+            <div class="order-summary">
+                <div class="container">
+                    <h4>order-summary</h4>
+                    <span class="price" style="color:black">
+                        <i class="fa fa-shopping-cart"></i>
+                        <b>2</b>
+                    </span>
+                    <p><span href="#">ticket price</> <span class="price">$15</span></p>
+                    <hr>
+                    <p>Total <span class="price" style="color:black"><b>$30</b></span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+    <footer>
+        <p class="copyright">Copyright © 2023, All Right Reserved <strong>ODEON</strong></p>
+        <div class="socialmedia-links">
+            <nav>
+                <ul>
+                    <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                    <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    <script src="js/payment-page.js"></script>
+</body>
+
+</html>
